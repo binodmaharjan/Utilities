@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.binod.maharjan.utilities' // CREATE A GROUP ID FOR YOUR LIBRARY
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.binod.maharjan.utilities' // CREATE A GROUP ID FOR YOUR LIBRARY
+                artifactId 'android-utils' // THE NAME OF YOUR MODULE
+
+                name 'AndroidUtils' // YOUR LIBRARY NAME
+                description 'A helper class for android' // YOUR LIBRARY DESCRIPTION
+                url 'https://github.com/binodmaharjan/Utilities/new/master?readme=1' // YOUR SITE
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'donib_em' //YOUR ID
+                        name 'Binod Maharjan' //YOUR NAME
+                        email 'maharjan411@gmail.com' //YOUR EMAIL
+                    }
+                }
+                scm {
+                    connection 'https://github.com/AntonioCappiello/date-utils.git' // YOUR GIT REPO
+                    developerConnection 'https://github.com/AntonioCappiello/date-utils.git' // YOUR GIT REPO
+                    url 'https://github.com/AntonioCappiello/date-utils' // YOUR SITE
+
+                }
+            }
+        }
+    }
+}
